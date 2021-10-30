@@ -2,10 +2,29 @@
     --azul: #3c72b4;
     --azulhover: #3666a1;
     --orange: #fd7e14;
+    --gradient: linear-gradient(
+        45deg,
+        #ab5ec2,
+        #a65dd6,
+        #956fff,
+        #74c0ff,
+        #5faaff,
+        #71e9f9,
+    );
+    
  }
-
-
 @import url(.bootstrap.min.css);
+
+body{
+    background:linear-gradient(
+        45deg,
+        #100214,
+        #333333,
+        #161415,
+        #1e1e1e
+    )
+}
+
 .main-menu{
     height:120px;
     width:100%;
@@ -65,4 +84,14 @@
 
   
 /*BANNER*/
-/*
+
+/*BOXES*/
+.box-container{
+    margin: 5em 5em
+}
+.box-text{
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+}
+/*BOXES*/
