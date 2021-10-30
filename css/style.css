@@ -3,13 +3,14 @@
     --azulhover: #3666a1;
     --orange: #fd7e14;
     --gradient: linear-gradient(
-        45deg,
-        #ab5ec2,
-        #a65dd6,
-        #956fff,
-        #74c0ff,
-        #5faaff,
-        #71e9f9,
+        135deg,
+        #ec0800,
+        #b95a1a,
+        #c99a1a,
+        #303323,
+        #3e3f3f,
+        #3e3f3f,
+        #161616
     );
     
  }
@@ -87,11 +88,50 @@ body{
 
 /*BOXES*/
 .box-container{
-    margin: 5em 5em
+    margin: 5em 5em;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .box-text{
     border: 3px solid white;
     border-radius: 10px;
-    color: white;
+    color: rgb(231, 231, 231);
+    text-align: center;
 }
+.box-text:hover{
+    background: black;
+    transition: 0.2s;
+}
+.box-text h3{
+    margin-top: 1em;
+    
+}
+.box-text p{
+    padding: 0 2em 0 2em;
+}
+.box-price{
+font-size: 40px;
+font-weight: bolder;
+color: var(--orange);
+}
+.box-button{
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: right;
+    padding:0.5em;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    text-decoration: none; 
+    border-radius: 10px; 
+    transition: 0.5s; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.box-button:hover{
+    color: white;
+    background-position: left;
+}
+
+
 /*BOXES*/
