@@ -6,9 +6,10 @@
 
 
 @import url(.bootstrap.min.css);
-menu{
+.main-menu{
     height:120px;
-    width:1110px;
+    width:100%;
+    background:black
 }
 .header{
     background:black
@@ -60,3 +61,8 @@ menu{
     
 }
 
+/*BANNER*/
+
+  
+/*BANNER*/
+/*
