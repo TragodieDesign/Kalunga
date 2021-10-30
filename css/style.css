@@ -12,18 +12,19 @@
         #3e3f3f,
         #161616
     );
-    
- }
-@import url(.bootstrap.min.css);
-
-body{
-    background:linear-gradient(
+    --darkgradient:linear-gradient(
         45deg,
         #100214,
         #333333,
         #161415,
         #1e1e1e
     )
+    
+ }
+@import url(.bootstrap.min.css);
+
+body{
+    background:var(--darkgradient)
 }
 
 .main-menu{
@@ -88,16 +89,20 @@ body{
 
 /*BOXES*/
 .box-container{
-    margin: 5em 5em;
+   margin-top: 3em;
     display:flex;
     align-items: center;
     justify-content: space-between;
+}
+.box-card{
+    text-align: center;
 }
 .box-text{
     border: 3px solid white;
     border-radius: 10px;
     color: rgb(231, 231, 231);
     text-align: center;
+    padding-bottom: 1em;
 }
 .box-text:hover{
     background: black;
@@ -119,19 +124,73 @@ color: var(--orange);
     background-image: var(--gradient);
     background-size: 300%;
     background-position: right;
-    padding:0.5em;
+    padding:0.3em;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     text-decoration: none; 
     border-radius: 10px; 
     transition: 0.5s; 
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: 'Montserrat'; 
+
+   
 }
 .box-button:hover{
     color: white;
     background-position: left;
 }
-
-
 /*BOXES*/
+
+
+/*PRODUCTS*/
+.products{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em;
+}
+.products .row{
+    margin-bottom: 2em;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.products .row .product-card{
+    width:270px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(235, 235, 235) ;
+
+}
+.card-img-top{
+    margin-top: 1.5em;
+    height:80%;
+    background-color: white;
+    
+}
+img.card-img-top {
+width:80%;
+border-radius: 20px;
+padding: 1em;
+border:solid 5px rgb(216, 216, 216);
+}
+
+.card-title{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+.product-title h3{
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 1em;  
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*PRODUCTS*/
