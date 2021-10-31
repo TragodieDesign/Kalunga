@@ -21,7 +21,8 @@
     )
     
  }
-@import url(.bootstrap.min.css);
+@import url(./bootstrap.min.css);
+@import url(./responsive.css);
 
 body{
     background:var(--darkgradient)
@@ -72,6 +73,7 @@ body{
     height:40px;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     align-items:center;
     justify-content: center;
     cursor: pointer;
@@ -104,6 +106,14 @@ body{
     height: 40px;
     padding-right:10px
 }
+
+@media screen and (max-width:600){
+    .logo-mobile .navbar-brand img{
+    display:none
+    
+    }
+}
+
 /*HEADER*/
 /*BANNER*/
 .banner{

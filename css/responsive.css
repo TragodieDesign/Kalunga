@@ -1,8 +1,17 @@
 @import url(./bootstrap.min.css);
 @import url(./style.css);
-@media (min-width:360) and (max-width:560){
+@media screen and (max-width:600){
     .box-container{
         display:flex;
         flex-direction: column;
     }
+    .navbar{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .logo-mobile{
+        display:none
+    }
 }
+
