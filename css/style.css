@@ -30,10 +30,13 @@ body{
 .main-menu{
     height:120px;
     width:100%;
-    background:black
+    background:black;
+    z-index:15;
+
 }
 .header{
-    background:black
+    background:black;
+    z-index:15;
 }
 .dropdown-menu.show{
     width:100px;
@@ -81,21 +84,59 @@ body{
     background-color: #3666a1;
     
 }
+.nav-item.dropdown{
+    list-style: none;
+}
+/*HEADER*/
+.navbar.fixed-top{
+    z-index: 2;
+    background:black
+}
+.container-navbar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
 
+}
+.container-navbar-fluid input{
+    
+    height: 40px;
+    padding-right:10px
+}
+/*HEADER*/
 /*BANNER*/
-
+.banner{
+    background:url(/img/banner.png) no-repeat;
+}
+.banner video{
+    height:110%
+}
   
 /*BANNER*/
+.carousel-inner{
+
+}
+.carousel-inner .carousel-item{
+
+
+}
+.carousel-inner .carousel-item .img-carousel{
+    width:1110px
+
+}
 
 /*BOXES*/
-.box-container{
+.box-wrapper .container{
    margin-top: 3em;
     display:flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .box-card{
     text-align: center;
+    margin-bottom: 5em;
 }
 .box-text{
     border: 3px solid white;
@@ -148,7 +189,7 @@ color: var(--orange);
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    margin-top: 10em;
+    margin-top: 7em;
 }
 .products .row{
     margin-bottom: 2em;
@@ -194,3 +235,45 @@ border:solid 5px rgb(216, 216, 216);
 }
 
 /*PRODUCTS*/
+/*FOOTER*/
+footer{
+    color: #687077;
+    background-color: #F8F9FA;
+    padding-top: 2em;
+}
+footer .container{
+    border-top: solid 0.5px #687077;
+    padding: 1em 0 1em 0;
+}
+footer .footer-title h5 {
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: bolder;
+    }
+footer .footer-title a{
+text-decoration: none;
+color: #687077;
+font-weight: 400;
+}
+footer .footer-title a:hover{
+    text-decoration: underline;
+}
+
+.social li a{
+    color: #687077;
+    text-decoration: none;
+    font-size: 16px;
+    list-style: none;
+}
+.social li{
+    list-style-type: none;
+}
+.social li:hover{
+    text-decoration: underline;
+}
+footer .social h5 {
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: bolder;
+    }
+/*FOOTER*/

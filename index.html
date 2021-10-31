@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!--bootstrap -->
+  <!--Owl Carousel-->
+  <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+  <!--Owl Carousel-->
 <!-- My css-->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/main.css">
@@ -18,6 +22,9 @@
 <!--Normalize.css-->
 <link rel="stylesheet" href="css/nomalize.css">
 <!--Normalize.css-->
+<!--Animate css cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--Animate css-->
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!--Font Awesome-->
@@ -60,7 +67,7 @@
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Serviços</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Minha Conta</a></li>
+                            <li><a class="dropdown-item" href="carousel.html">Minha Conta</a></li>
                         </ul>
                     </li>
                     <!--Login dropdown-->
@@ -80,18 +87,35 @@
                 </div>
             </nav>  
         </div> 
-    </div>    
-<!--HEADER-->
+    </div>
 <!--New header-->
+<nav class="navbar fixed-top navbar-black bg-black">
+  <div class="container-navbar col-12">
+    <div class="navbar-brand col-2" href="#"><img src="img/logokalunga.png" href="#" alt="Kalunga" srcset="">
+    </div>
+    <div class="nav-form col-8">
+    <form class="d-flex ">
+      <input class="form-control"  type="search" placeholder="Digite aqui a sua busca " aria-label="Search">
+      <button class="btn-search" type="submit"><i class="fas fa-search"></i></button>
+  </form>
+</div>
+  <a class="nav-cart d" href="#"  role="button">
+    <i class="fas fa-shopping-cart"></i>
+</a>
+  </div>
+</nav>
+<!--HEADER-->
+
 
 <!--BANNER-->
-      <video class="banner col-12" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <div class="banner">
+      <video class="banner col-12" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" alt="Black Friday">
         <source src="video/bannerKalunga.mp4" type="video/mp4">
       </video>
+    </div>
 <!--BANNER-->
 
 <!--CAROUSEL-->
-    <div class="container-fluid">
       <div id="MainSlider" class="carousel slide" data-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#MainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -102,23 +126,23 @@
             <button type="button" data-bs-target="#MainSlider" data-bs-slide-to="5" aria-label="Slide 6"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/banner-desktop-1.webp" class="d-block w-100" alt="Oferta Windows 11">
+          <div class="carousel-item active" data-bs-interval="20000">
+            <img src="img/banner-desktop-1.png" class="d-block w-100" alt="Oferta Windows 11">
           </div>
-          <div class="carousel-item">
-            <img src="img/banner-desktop-2.webp" class="d-block w-100" alt="Chamex Papel Sulfite Oferta">
+          <div class="carousel-item" data-bs-interval="20000">
+            <img src="img/banner-desktop-2.png" class="d-block w-100" alt="Chamex Papel Sulfite Oferta">
           </div>
-          <div class="carousel-item">
-            <img src="img/banner-desktop-3.webp" class="d-block w-100" alt="Computadores HP Oferta">
+          <div class="carousel-item" data-bs-interval="20000">
+            <img src="img/banner-desktop-3.png" class="d-block w-100" alt="Computadores HP Oferta">
           </div>
-          <div class="carousel-item">
-            <img src="img/banner-desktop-4.webp" class="d-block w-100" alt="Pilha Duracell Oferta">
+          <div class="carousel-item" data-bs-interval="20000">
+            <img src="img/banner-desktop-4.png" class="d-block w-100" alt="Pilha Duracell Oferta">
           </div>
-          <div class="carousel-item">
-            <img src="img/999455-desktop.webp" class="d-block w-100" alt="Impressora EcoTank Oferta">
+          <div class="carousel-item" data-bs-interval="20000">
+            <img src="img/999455-desktop.png" class="d-block w-100" alt="Impressora EcoTank Oferta">
           </div>
-          <div class="carousel-item">
-            <img src="img/banner-desktop-5.webp" class="d-block w-100" alt="Cartuchos HP Oferta">
+          <div class="carousel-item" data-bs-interval="20000">
+            <img src="img/banner-desktop-5.png" class="d-block w-100" alt="Cartuchos HP Oferta">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#MainSlider" data-bs-slide="prev">
@@ -130,12 +154,12 @@
           <span class="visually-hidden">Next</span>          
         </button>
       </div>
-    </div>
 <!--CAROUSEL-->
 
 <!--BOXES-->
-    <div class="box-container container col-12">
-        <div class="box-card col-4" style="width: 350px; height: 400px;">
+<div class="box-wrapper">
+    <div class="container">
+        <div class="box-card col-12  col-sm-6 col-md-1" style="width: 350px; height: 400px;">
             <div class="product">
                 <img src="img/box-computadores-aio.webp" class="card-img" alt="...">
             </div>
@@ -146,7 +170,7 @@
                 <a href="#" class="box-button">CONFIRA</a>
             </div>
         </div>
-        <div class="box-card col-4" style="width: 350px; height: 400px;">
+        <div class="box-card col-12  col-sm-6 col-md-1" style="width: 350px; height: 400px;">
           <div class="product">
               <img src="img/box-cadeiras-gamer.webp" class="card-img" alt="...">
           </div>
@@ -157,7 +181,7 @@
               <a href="#" class="box-button">CONFIRA</a>
           </div>
       </div>
-      <div class="box-card col-4" style="width: 350px; height: 400px;">
+      <div class="box-card col-12  col-sm-6 col-md-1" style="width: 350px; height: 400px;">
         <div class="product">
             <img src="img/box-impressoras.webp" class="card-img" alt="...">
         </div>
@@ -169,6 +193,7 @@
         </div>
     </div>
     </div>
+  </div>
 <!--BOXES-->
 <!--PRODUCTS-->
 <div class="products container-fluid">
@@ -201,7 +226,7 @@
     </div>
       <!--Card-->
       <div class="product-card card col-3">
-        <img src="img/products/315601.webp" class="card-img-top" alt="...">
+        <img src="img/products/476102d.webp" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Notebook</h5>
           <p class="card-text">Notebook HP 256-G8, processador Core i5, 8GB de RAM, 256GB SSD</p>
@@ -211,7 +236,7 @@
       </div>
           <!--Card-->
           <div class="product-card card col-3">
-            <img src="img/products/315687.webp" class="card-img-top" alt="...">
+            <img src="img/products/222548.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Notebook</h5>
               <p class="card-text">Notebook HP 256-G8, processador Core i5, 8GB de RAM, 256GB SSD</p>
@@ -232,7 +257,7 @@ Produtos para o seu Home office
     <div class="product-card card col-3">
       <img src="img/products/441893.webp" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Notebook</h5>
+        <h5 class="card-title">Mesa</h5>
         <p class="card-text">Notebook HP 256-G8, processador Core i5, 8GB de RAM, 256GB SSD</p>
         <p class="box-price">R$549,99</p>
         <a href="#" class="box-button btn btn-primary">Comprar</a>
@@ -252,7 +277,7 @@ Produtos para o seu Home office
       <div class="product-card card col-3">
         <img src="img/products/477144.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Notebook</h5>
+          <h5 class="card-title">Monitor</h5>
           <p class="card-text">Notebook HP 256-G8, processador Core i5, 8GB de RAM, 256GB SSD</p>
           <p class="box-price">R$549,99</p>
           <a href="#" class="box-button btn btn-primary">Comprar</a>
@@ -262,7 +287,7 @@ Produtos para o seu Home office
           <div class="product-card card col-3">
             <img src="img/products/477260.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Notebook</h5>
+              <h5 class="card-title">Monitor</h5>
               <p class="card-text">Notebook HP 256-G8, processador Core i5, 8GB de RAM, 256GB SSD</p>
               <p class="box-price">R$549,99</p>
               <a href="#" class="box-button btn btn-primary">Comprar</a>
@@ -274,6 +299,87 @@ Produtos para o seu Home office
 </div>
 <!--PRODUCTS-->
 
+<!--FOOTER-->
+		
+<footer>
+  <div class="container">
+    <div class="row">
+    
+      <!-- Single Footer -->
+      <div class="col-sm-3">
+        <div class="single-footer">
+            <div class="footer-title">
+              <h5>Institucional</h5>
+                <a href="#">Sobre a Kalunga</a><br>
+                <a href="#">Lojas Kalunga</a><br>
+                <a href="#">Trabalhe conosco</a><br>
+                <a href="#">Mapa do site</a><br>
+                <a href="#">Serviços Kalunga</a><br>
+                <a href="#">Kalunga Copy&Print</a><br>
+                <a href="#">Assessoria de Imprensa</a><br>
+            </div>
+          
+        </div>
+      </div>
+      <!-- Single Footer -->
+      <div class="col-sm-3">
+        <div class="single-footer">
+            <div class="footer-title">
+              <h5>Dúvidas</h5>
+                <a href="#">Como funciona a loja</a><br>
+                <a href="#">Dúvidas sobre cadastro</a><br>
+                <a href="#">Preços e pagamento na loja virtual</a><br>
+                <a href="#">Acompanhamento, alteração e entrega dos pedidos</a><br>
+                <a href="#">Devolução e troca</a><br>
+                <a href="#">Segurança</a><br>
+                <a href="#">Nota Fiscal Eletrônica</a><br>
+                <a href="#">Produtos por Download</a><br>
+                <a href="#">Política de Privacidade</a><br>
+            </div>
+          
+        </div>
+      </div>     
+      
+      <!-- Single Footer -->
+      <div class="col-sm-3">
+        <div class="social">
+            <h5>Redes Sociais </h5>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Single Footer -->
+      
+      <!-- Single Footer -->
+      <div class="col-sm-3">
+        <div class="single-footer">
+            <div class="footer-title">
+              <h5>Formas de Pagamento </h5>
+                <a href="#"><b>Cartões de crédito:</b> Visa, MasterCard, Diners Club, Hiper, American Express e Elo </a><br>
+                <a href="#"> <b>Boleto Bancário, PIX</a></b> e <b> Pagamento Faturado</b> </a><br>
+                <a href="#"><b>Débito Online:</b> Itaú, Banco do Brasil e Visa Electron </a><br>
+            </div>
+          
+        </div>
+      </div>
+      <!-- Single Footer -->      
+      
+           
+      
+    </div>
+  </div>
+  
+
+
+
+</footer>
+
+<!--FOOTER-->
 
 
 
@@ -285,5 +391,10 @@ Produtos para o seu Home office
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 <!--Bootstrap js-->
+<!--Script Owl Carousel and Jquery-->
+<script type="text/javascript" src="js/owl/jquery.min.js"></script>
+<script type="text/javascript" src="js/owl/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/owl/setup.js"></script>
+<!--Script Owl Carousel and Jquery-->
 </body>
 </html>
